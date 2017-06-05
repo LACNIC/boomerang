@@ -45,7 +45,7 @@
 	// abuse arrays to do the latency test simply because it avoids a bunch of
 	// branches in the rest of the code.
 	// I'm sorry Douglas
-	images.l = { name: "image-l.gif", size: 35, timeout: 1000 };
+	images.l = { name: "latency.txt", size: 10, timeout: 1000 };
 
 	// private object
 	impl = {

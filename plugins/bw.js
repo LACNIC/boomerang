@@ -30,13 +30,8 @@
 	// The IM command used was : convert -size 618x618 -depth 8 gray:image-3.bin image-3.png
 	// Vary the image dimensions to change the filesize. The image dimensions are more or less the square of the desired filesize.
 	images = [
-		{ name: "image-0.png", size: 11773, timeout: 1400 },
-		{ name: "image-1.png", size: 40836, timeout: 1200 },
-		{ name: "image-2.png", size: 165544, timeout: 1300 },
-		{ name: "image-3.png", size: 382946, timeout: 1500 },
-		{ name: "image-4.png", size: 1236278, timeout: 1200 },
-		{ name: "image-5.png", size: 4511798, timeout: 1200 },
-		{ name: "image-6.png", size: 9092136, timeout: 1200 }
+		{ name: "random350x350.jpg", size: 245388, timeout: 1500 },
+		{ name: "random500x500.jpg", size: 505544, timeout: 2000 }
 	];
 
 	images.end = images.length;

@@ -31,7 +31,9 @@
 	// Vary the image dimensions to change the filesize. The image dimensions are more or less the square of the desired filesize.
 	images = [
 		{ name: "random350x350.jpg", size: 245388, timeout: 1500 },
-		{ name: "random500x500.jpg", size: 505544, timeout: 2000 }
+		{ name: "random500x500.jpg", size: 505544, timeout: 2000 },
+        { name: "random750x750.jpg", size: 1118012, timeout: 2000 },
+        { name: "random1000x1000.jpg", size: 1986284, timeout: 2000 }
 	];
 
 	images.end = images.length;
@@ -153,6 +155,8 @@
 				}
 
 				r = this.results[i].r;
+				console.log('>>>>');
+				console.log(r);
 
 				// the next loop we iterate through backwards and only consider the largest
 				// 3 images that succeeded that way we don't consider small images that
@@ -160,7 +164,8 @@
 				nimgs = 0;
 				for (j = r.length - 1; j >= 0 && nimgs < 3; j--) {
 					// if we hit an undefined image time, we skipped everything before this
-					if (!r[j]) {
+
+                    if (!r[j]) {
 						break;
 					}
 					if (r[j].t === null) {
